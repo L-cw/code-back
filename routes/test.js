@@ -8,6 +8,8 @@ var upload = multer({dest:"/upload"});
 router.post('/upimg', testController.upimg);
 router.post('/index', testController.indexData);
 router.post('/load', testController.loadMore);
+router.post('/forum/index', testController.forumIndex);
+router.post('/forum/load', testController.forumLoad);
 
 /* GET home page. */
 router.get('/', testController.show);

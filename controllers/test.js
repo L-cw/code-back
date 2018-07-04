@@ -626,7 +626,7 @@ const pageTotal = 5
 let nextFlag = true
 const loadMore = (req, res) => {
   console.log(req.body)
-  let {startPage} = req.body
+  let { startPage } = req.body
   if (startPage > 5) {
     nextFlag = false
   }
@@ -742,11 +742,288 @@ const loadMore = (req, res) => {
   })
 }
 
+const forumIndex = (req, res) => {
+  res.json({
+    "err_code": "0",
+    "data": {
+      "topicListRespDto": {
+        "list": [
+          {
+            "commentsCount": 2,
+            "createTime": 1530587407000,
+            "forumLabel": [
+              "新手教程",
+              "组件设计"
+            ],
+            "forumName": "BUMO",
+            "title": "最新公告奖励发放",
+            "topFlag": true,
+            "topicType": 4,
+            "userPic": "head20.jpg"
+          },
+          {
+            "commentsCount": 0,
+            "createTime": 1530607009000,
+            "forumLabel": [
+              "新手教程",
+              "组件设计"
+            ],
+            "forumName": "BUMO",
+            "title": "最新技术",
+            "topFlag": false,
+            "topicType": 1,
+            "userPic": "head20.jpg"
+          },
+          {
+            "commentsCount": 3,
+            "createTime": 1530606715000,
+            "forumLabel": [
+              "组件设计",
+              "意见反馈"
+            ],
+            "forumName": "BUMO",
+            "title": "壹诺金融上线",
+            "topFlag": false,
+            "topicType": 1,
+            "userPic": "head20.jpg"
+          },
+          {
+            "commentsCount": 3,
+            "createTime": 1530606715000,
+            "forumLabel": [
+              "组件设计",
+              "意见反馈"
+            ],
+            "forumName": "BUMO",
+            "title": "壹诺金融上线",
+            "topFlag": false,
+            "topicType": 1,
+            "userPic": "head20.jpg"
+          },
+          {
+            "commentsCount": 3,
+            "createTime": 1530606715000,
+            "forumLabel": [
+              "组件设计",
+              "意见反馈"
+            ],
+            "forumName": "BUMO",
+            "title": "壹诺金融上线",
+            "topFlag": false,
+            "topicType": 1,
+            "userPic": "head20.jpg"
+          },
+          {
+            "commentsCount": 3,
+            "createTime": 1530606715000,
+            "forumLabel": [
+              "组件设计",
+              "意见反馈"
+            ],
+            "forumName": "BUMO",
+            "title": "壹诺金融上线",
+            "topFlag": false,
+            "topicType": 1,
+            "userPic": "head20.jpg"
+          },
+          {
+            "commentsCount": 3,
+            "createTime": 1530606715000,
+            "forumLabel": [
+              "组件设计",
+              "意见反馈"
+            ],
+            "forumName": "BUMO",
+            "title": "壹诺金融上线",
+            "topFlag": false,
+            "topicType": 1,
+            "userPic": "head20.jpg"
+          },
+          {
+            "commentsCount": 3,
+            "createTime": 1530606715000,
+            "forumLabel": [
+              "组件设计",
+              "意见反馈"
+            ],
+            "forumName": "BUMO",
+            "title": "壹诺金融上线",
+            "topFlag": false,
+            "topicType": 1,
+            "userPic": "head20.jpg"
+          },
+          {
+            "commentsCount": 3,
+            "createTime": 1530606715000,
+            "forumLabel": [
+              "组件设计",
+              "意见反馈"
+            ],
+            "forumName": "BUMO",
+            "title": "壹诺金融上线",
+            "topFlag": false,
+            "topicType": 1,
+            "userPic": "head20.jpg"
+          },
+          {
+            "commentsCount": 3,
+            "createTime": 1530606715000,
+            "forumLabel": [
+              "组件设计",
+              "意见反馈"
+            ],
+            "forumName": "BUMO",
+            "title": "壹诺金融上线",
+            "topFlag": false,
+            "topicType": 1,
+            "userPic": "head20.jpg"
+          },
+          {
+            "commentsCount": 1,
+            "createTime": 1530587297000,
+            "forumName": "BUMO",
+            "title": "最新公告-主网上线",
+            "topFlag": false,
+            "topicType": 4,
+            "userPic": "head20.jpg"
+          }
+        ],
+        "page": {
+          "count": 1,
+          "curSize": 4,
+          "endOfGroup": 1,
+          "firstResultNumber": 0,
+          "nextFlag": false,
+          "queryTotal": true,
+          "size": 20,
+          "start": 1,
+          "startOfGroup": 1,
+          "total": 4
+        }
+      },
+      "forumInfoRespDtoList": [
+        
+        {
+          "forumId": "1",
+          "forumName": "BUMO"
+        }
+      ]
+    }
+  })
+}
+
+let nextFlag1 = true
+const forumLoad = (req, res) => {
+  console.log(req.body)
+  let { startPage } = req.body
+  if (startPage > 5) {
+    nextFlag1 = false
+  }
+  res.json({
+    "err_code": "0",
+    "data": {
+      "newsRespBoList": [
+        {
+          "commentsCount": 1,
+          "createTime": 1530606715000,
+          "forumLabel": [
+            "组件设计",
+            "意见反馈"
+          ],
+          "forumName": "BUMO",
+          "title": "壹诺金融上线",
+          "topFlag": false,
+          "topicType": 1,
+          "userPic": "head20.jpg"
+        },
+        {
+          "commentsCount": 2,
+          "createTime": 1530606715000,
+          "forumLabel": [
+            "组件设计",
+            "意见反馈"
+          ],
+          "forumName": "BUMO",
+          "title": "壹诺金融上线",
+          "topFlag": false,
+          "topicType": 2,
+          "userPic": "head20.jpg"
+        },
+        {
+          "commentsCount": 2,
+          "createTime": 1530606715000,
+          "forumLabel": [
+            "组件设计",
+            "意见反馈"
+          ],
+          "forumName": "BUMO",
+          "title": "壹诺金融上线",
+          "topFlag": false,
+          "topicType": 2,
+          "userPic": "head20.jpg"
+        },
+        {
+          "commentsCount": 3,
+          "createTime": 1530606715000,
+          "forumLabel": [
+            "组件设计",
+            "意见反馈"
+          ],
+          "forumName": "BUMO",
+          "title": "壹诺金融上线",
+          "topFlag": false,
+          "topicType": 1,
+          "userPic": "head20.jpg"
+        },
+        {
+          "commentsCount": 3,
+          "createTime": 1530606715000,
+          "forumLabel": [
+            "组件设计",
+            "意见反馈"
+          ],
+          "forumName": "BUMO",
+          "title": "壹诺金融上线",
+          "topFlag": false,
+          "topicType": 2,
+          "userPic": "head20.jpg"
+        },
+        {
+          "commentsCount": 1,
+          "createTime": 1530587297000,
+          "forumLabel": [
+            "组件设计",
+            "意见反馈"
+          ],
+          "forumName": "BUMO",
+          "title": "最新公告-主网上线",
+          "topFlag": false,
+          "topicType": 2,
+          "userPic": "head20.jpg"
+        }
+      ],
+      "page": {
+        "count": 1,
+        "curSize": 2,
+        "endOfGroup": 1,
+        "firstResultNumber": 0,
+        "queryTotal": true,
+        "size": 7,
+        "start": startPage,
+        "startOfGroup": 1,
+        "total": 2,
+        "nextFlag": nextFlag1
+      }
+    }
+  })
+}
 const example = (req, res) => {}
 
 module.exports = {
   upimg,
   show,
   indexData,
-  loadMore
+  loadMore,
+  forumIndex,
+  forumLoad
 }
