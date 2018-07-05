@@ -6,10 +6,10 @@ var upload = multer({dest:"/upload"});
 
 /* POST home page. */
 router.post('/upimg', testController.upimg);
-router.post('/index', testController.indexData);
-router.post('/load', testController.loadMore);
+router.post('/main/index', testController.indexData);
+router.post('/main/news/list', testController.loadMore);
 router.post('/forum/index', testController.forumIndex);
-router.post('/forum/load', testController.forumLoad);
+router.post('/forum/news/list', testController.forumLoad);
 
 /* GET home page. */
 router.get('/', testController.show);

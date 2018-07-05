@@ -25,7 +25,7 @@ app.use(upload.array('photos', 12))
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/test', testRouter);
+app.use('/api', testRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
