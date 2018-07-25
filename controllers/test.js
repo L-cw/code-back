@@ -1,5 +1,10 @@
+
 const upimg = (req, res) => {
-  console.log(req.body)
+	const {name, company, salary, address} = req.body;
+	const logo = req.file.filename;
+	res.json({
+    "ret": true
+  })
 }
 
 const show = (req, res) => {
